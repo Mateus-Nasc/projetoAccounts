@@ -140,7 +140,7 @@ function addAmount(account, value) {
     // accountData object js
     accountData.balance = parseFloat(value) + parseFloat(accountData.balance) //add o value + o valor q temos na conta
 
-    fs.writeFileSync( //escrevendo no file
+    fs.writeFileSync( //escrevendo no file os dados atualizados
         `accounts/${account}.json`,
         JSON.stringify(accountData), //transformando json em texto
         function (err) {
@@ -160,7 +160,7 @@ function getAccount(account) {
     })
     // accountJson vai vim em .json mas esta em um arquivo entao é um texto e não objeto
 
-    return JSON.parse(accountJson) //aq retorno ele em objeto js
+    return JSON.parse(accountJson) //aqui retorno ele em objeto js
 }
 
 //consult accountBalance
@@ -242,9 +242,9 @@ function saqueBalance(accountsq, value) {
 
     accountdatas.balance = parseFloat(accountdatas.balance) - parseFloat(value)
 
-    fs.writeFileSync( //escrevendo no file os dados atualizados
+    fs.writeFileSync( 
         `accounts/${accountsq}.json`,
-        JSON.stringify(accountdatas), //transformando json em texto
+        JSON.stringify(accountdatas), 
         function (err) {
             console.log(err)
         }, 
