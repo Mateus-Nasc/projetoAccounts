@@ -282,7 +282,7 @@ function opcoes() {
     .catch((err) => console.log(err))
 }
 
-//funcao q simula
+//funcao que simula
 function escolhaValor() {
     
     inquirer.prompt([
@@ -331,7 +331,6 @@ function escolhaValor() {
                 } else {
                     return escolhaValor()
                 }
-
 
             })
             .catch((err) => console.log(err))
