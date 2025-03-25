@@ -69,7 +69,7 @@ function buildAccount() {
         if (fs.existsSync(`accounts/${accountName}.json`)) {
             console.log(chalk.bgRed.black('erro, essa conta ja existe, escolha outro nome'), )
             buildAccount() 
-            return //return para qualquer erro no sistema, deve obrigatoriamente retornar
+            return //deve-se obrigatoriamente retornar qualquer erro no sistema
         }
 
 
@@ -129,7 +129,7 @@ function deposit() {
     })
 }
 
-//pegar conta
+//adicionando o deposito e reescrevendo no arquivo os valores atualizados
 function addAmount(account, value) {
     const accountData = getAccount(account)
 
@@ -138,7 +138,7 @@ function addAmount(account, value) {
         return deposit()
     }
     // accountData object js
-    accountData.balance = parseFloat(value) + parseFloat(accountData.balance) //add o value + o valor q temos na conta
+    accountData.balance = parseFloat(value) + parseFloat(accountData.balance) //add o value + o valor que temos na conta
 
     fs.writeFileSync( //escrevendo no file os dados atualizados
         `accounts/${account}.json`,
@@ -152,7 +152,7 @@ function addAmount(account, value) {
    
 }
 
-// funcao para ler o arquivo e retorna-lo em objeto para que possamos acessalo
+// pegar a conta ler o arquivo e retorna-lo em objeto para que possamos acessalo
 function getAccount(account) {
     const accountJson = fs.readFileSync(`accounts/${account}.json`, {
         encoding: 'utf8', //prevendo acentos
@@ -282,7 +282,6 @@ function opcoes() {
     .catch((err) => console.log(err))
 }
 
-//funcao que simula
 function escolhaValor() {
     
     inquirer.prompt([
