@@ -15,10 +15,10 @@ Este projeto é um sistema bancário simples baseado em Node.js, permitindo aos 
 
 ## Tecnologias Utilizadas:
 
- Node.js – Ambiente de execução JavaScript
- Inquirer.js – Interação com o usuário via terminal
- Chalk – Estilização de mensagens no terminal
- File System (fs) – Manipulação de arquivos .json
+ Node.js – Ambiente de execução JavaScript.
+ Inquirer.js – Interação com o usuário via terminal.
+ Chalk – Estilização de mensagens no terminal.
+ File System (fs) – Manipulação de arquivos .json.
 
 ## Como Executar o Projeto:
   npm install
