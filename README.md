@@ -6,7 +6,7 @@ Este projeto é um sistema bancário simples baseado em Node.js, permitindo aos 
 
 ## Funcionalidades:
  Criar uma conta bancária,
- Consulta do saldo,
+ Consultar o saldo,
  Realizar depósitos,
  Realizar saques,
  Solicitar empréstimos e
