@@ -10,7 +10,7 @@ Este projeto é um sistema bancário simples baseado em Node.js, permitindo aos 
  Realizar depósitos,
  Realizar saques,
  Solicitar empréstimos e
- Encerrar o programa
+ Encerrar o programa.
 
 ## Tecnologias Utilizadas:
  Node.js – Ambiente de execução JavaScript.
