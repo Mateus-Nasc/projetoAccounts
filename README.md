@@ -5,11 +5,11 @@
 Este projeto é um sistema bancário simples baseado em Node.js, permitindo aos usuários criar contas, consultar saldo, depositar, sacar e até solicitar empréstimos. Ele utiliza inquirer para interação no terminal e chalk para estilização de mensagens.
 
 ## Funcionalidades:
- Criar uma conta bancária
- Consultar saldo
- Realizar depósitos
- Realizar saques
- Solicitar empréstimos
+ Criar uma conta bancária.
+ Consulta do saldo.
+ Realizar depósitos.
+ Realizar saques.
+ Solicitar empréstimos.
  Encerrar o programa
 
 ## Tecnologias Utilizadas:
